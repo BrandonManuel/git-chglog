@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"time"
 
+	chglog "github.com/BrandonManuel/git-chglog"
 	"github.com/fatih/color"
-	chglog "github.com/git-chglog/git-chglog"
 )
 
 // CLI ...
