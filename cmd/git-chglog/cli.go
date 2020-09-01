@@ -49,7 +49,7 @@ func (c *CLI) Run() int {
 		color.NoColor = true
 	}
 
-	c.logger.Log(":watch: Generating changelasdfasdfog ...")
+	c.logger.Log(":watch: Generating asdf ...")
 
 	config, err := c.prepareConfig()
 	if err != nil {

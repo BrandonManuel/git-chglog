@@ -285,7 +285,7 @@ Online breaking change message.
 ### Reverts
 - feat(core): Add foo bar @mention and issue #987
 
-### Pull Requests
+### Puewtwetll Requests
 - Merge pull request #1000 from tsuyoshiwada/patch-1
 - Merge pull request #999 from tsuyoshiwada/patch-1
 

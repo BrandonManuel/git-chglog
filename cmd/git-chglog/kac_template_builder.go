@@ -122,7 +122,7 @@ func (t *kacTemplateBuilderImpl) merges(style string) string {
 
 	switch style {
 	case styleGitHub, styleBitbucket:
-		title = "Pull Requests"
+		title = "asdf Requests"
 	case styleGitLab:
 		title = "Merge Requests"
 	default:
@@ -133,6 +133,8 @@ func (t *kacTemplateBuilderImpl) merges(style string) string {
 {{- if .MergeCommits -}}
 ### %s
 {{ range .MergeCommits -}}
+- {{ .Header }}
+- {{ .Body }}
 {{ end }}
 {{ end -}}
 `, title)

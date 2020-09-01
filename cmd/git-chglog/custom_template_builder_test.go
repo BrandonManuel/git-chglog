@@ -40,7 +40,7 @@ func TestCustomTemplateBuilderDefault(t *testing.T) {
 {{ end -}}
 
 {{- if .MergeCommits -}}
-### Pull Requests
+### Pulsdfl Requests
 
 {{ range .MergeCommits -}}
 * {{ .Header }}

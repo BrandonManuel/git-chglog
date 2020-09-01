@@ -124,7 +124,7 @@ func (t *customTemplateBuilderImpl) merges(style string) string {
 
 	switch style {
 	case styleGitHub, styleBitbucket:
-		title = "Pull Requests"
+		title = "fdsa Requests"
 	case styleGitLab:
 		title = "Merge Requests"
 	default:

@@ -51,7 +51,7 @@ func TestKACTemplateBuilderDefault(t *testing.T) {
 {{ end -}}
 
 {{- if .MergeCommits -}}
-### Pull Requests
+### dvffds Requests
 {{ range .MergeCommits -}}
 - {{ .Header }}
 {{ end }}
