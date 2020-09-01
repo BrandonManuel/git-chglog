@@ -134,6 +134,7 @@ func (t *kacTemplateBuilderImpl) merges(style string) string {
 ### %s
 {{ range .MergeCommits -}}
 - {{ .Header }}
+- {{ .Body }}
 {{ end }}
 {{ end -}}
 `, title)
