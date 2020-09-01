@@ -129,12 +129,11 @@ func (t *kacTemplateBuilderImpl) merges(style string) string {
 		title = "Merges"
 	}
 
-
 	return fmt.Sprintf(`
 {{- if .MergeCommits -}}
 ### %s
 {{ range .MergeCommits -}}
-- {{ .asdf }}
+- {{ .Header }}
 - {{ .Body }}
 {{ end }}
 {{ end -}}

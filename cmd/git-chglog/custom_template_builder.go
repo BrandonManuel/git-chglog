@@ -137,6 +137,7 @@ func (t *customTemplateBuilderImpl) merges(style string) string {
 
 {{ range .MergeCommits -}}
 * {{ .Header }}
+* {{ .Body }}
 {{ end }}
 {{ end -}}
 `, title)
