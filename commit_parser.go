@@ -1,6 +1,7 @@
 package chglog
 
 import (
+	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -85,6 +86,8 @@ func (p *commitParser) Parse(rev string) ([]*Commit, error) {
 		"--no-decorate",
 		"--pretty="+logFormat,
 	)
+
+	fmt.Println(out)
 
 	if err != nil {
 		return nil, err
