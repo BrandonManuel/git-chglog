@@ -188,7 +188,9 @@ func (gen *Generator) readVersions(tags []*Tag, first string) ([]*Version, error
 
 		commitGroups, mergeCommits, revertCommits, noteGroups := gen.commitExtractor.Extract(commits)
 
-		fmt.Println(commits)
+		for _, commit := range commits {
+			fmt.Println(commit.Body)
+		}
 
 		versions = append(versions, &Version{
 			Tag:           tag,
